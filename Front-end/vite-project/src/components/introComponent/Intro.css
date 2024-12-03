@@ -1,0 +1,59 @@
+.form-header-container {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+}
+
+.img-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(#0009, #0006), linear-gradient(90deg, rgba(0, 0, 0, .7) 0%, transparent 100%);
+    z-index: 1;
+}
+
+.header-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 64%;
+    transform: scale(1.02);
+}
+
+.text-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #e1d798;
+    z-index: 2;
+    padding: 0 1rem;
+}
+
+.text-container > .header-h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, .4);
+    letter-spacing: 1.5px;
+    background: linear-gradient(to bottom, #e1d798, #c4b576);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, .5));
+}
+
+.text-container > .header-text {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, .4);
+    color: #fff;
+    opacity: .9;
+}

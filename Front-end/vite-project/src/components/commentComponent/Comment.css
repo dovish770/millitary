@@ -1,0 +1,21 @@
+.comment-container {
+    margin: 3rem 0
+}
+
+.comment-textarea {
+    width: 95.5%;
+    min-height: 8rem;
+    padding: 1rem;
+    border: 2px solid #6ea171;
+    border-radius: 6px;
+    resize: vertical;
+    transition: all .2s ease;
+    background-color: #6ea1710d
+}
+
+.comment-textarea:focus {
+    outline: none;
+    border-color: #4d784e;
+    box-shadow: 0 0 0 3px #4d784e1a;
+    background-color: #fff
+}

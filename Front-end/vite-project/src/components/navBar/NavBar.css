@@ -1,0 +1,67 @@
+.navbar {
+    background-color: #675645;
+    box-shadow: 0 4px 8px #00000026;
+    padding: 1rem 0;
+}
+
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.navbar-logo {
+    height: 3rem;
+    width: auto;
+}
+
+.navbar-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #e1d798;
+    margin-left: auto;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,sans-serif;
+    letter-spacing: .5px;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center; 
+}
+
+.navbar-link {
+    color: #e1d798;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: .5rem 0;
+    position: relative;
+    transition: color .2s ease;
+    text-align: center;
+    width: auto;
+}
+
+.navbar-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #e1d798;
+    transform: scaleX(0);
+    transition: transform .2s ease;
+}
+
+.navbar-link:hover {
+    color: #fff;
+}
+
+.navbar-link:hover::after {
+    transform: scaleX(1);
+}

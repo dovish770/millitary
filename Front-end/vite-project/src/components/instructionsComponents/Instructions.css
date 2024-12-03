@@ -1,0 +1,109 @@
+.instructions-container {
+    margin: 2rem 0 3rem;
+    padding: 0 1rem
+}
+
+.inner-instructions-container {
+    max-width: 900px;
+    margin: 0 auto
+}
+
+.instructions {
+    background: #fff;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 2px 8px #0000000d;
+    border: 1px solid rgba(77,120,78,.2)
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(77,120,78,.2)
+}
+
+.h3-class {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #4d784e
+}
+
+.logo1 {
+    color: #4d784e
+}
+
+
+.animation-container {
+    margin: 2rem 0
+}
+
+.animation-line {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: .5rem;
+    color: #4d784e;
+    font-weight: 600
+}
+
+.moving-line-container {
+    flex-grow: 1;
+    height: 4px;
+    background-color: #4d784e33;
+    border-radius: 2px;
+    position: relative;
+    overflow: hidden
+}
+
+.moving-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right,#4d784e,#6ea171);
+    transform-origin: left;
+    animation: line-moving 2s ease-out infinite
+}
+
+.If604jsx {
+    display: flex;
+    justify-content: space-between;
+    color: #675645;
+    font-size: .95rem;
+    margin-top: .5rem
+}
+
+.p1 {
+    margin: 1.5rem 0;
+    padding: 1rem 0;
+    border-top: 1px solid rgba(77,120,78,.1);
+    border-bottom: 1px solid rgba(77,120,78,.1)
+}
+
+.p1 p,.p2 p {
+    color: #675645;
+    line-height: 1.6
+}
+
+.p2 {
+    color: #4d784e;
+    margin-top: 1.5rem
+}
+
+@keyframes line-moving {
+        0% {
+            transform: scaleX(.2)
+        }
+    
+        50% {
+            transform: scaleX(1)
+        }
+    
+        to {
+            transform: scaleX(.2)
+        }
+    }
